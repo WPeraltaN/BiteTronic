@@ -33,7 +33,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -55,4 +54,69 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* MENÚ LATERAL */
+/* contenedor del menú */
+.menu-lateral{
+    align-items: center;
+    display: flex;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, .3);
+    flex-direction: column;
+    float: left;
+    height: 100vh;
+    width: 20vw;
+}
+
+.menu-lateral h2{
+    font-family: black_hans_sans;
+    font-size: 20pt;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.menu-lateral a div{
+    align-items: center;
+    display: flex;
+    font-family: rubik;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px 0 10px 5vw;
+}
+
+.menu-lateral a div p{
+    margin-left: 8px;
+}
+
+.menu-lateral a,
+.menu-lateral .navegacion{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.menu-lateral a div img:nth-child(2){
+    display: none;
+}
+
+.menu-lateral a div{
+    transition: .6s;
+}
+
+.menu-lateral a:hover div{
+    background-color: black;
+    color: white;
+}
+.menu-lateral a:hover div img:nth-child(1){display: none;}
+.menu-lateral a:hover div img:nth-child(2){display: block;}
+
+.menu-lateral .navegacion{
+    flex-grow: 1;
+}
+
+.menu-lateral #log-out{
+    background-color: black;
+    color: white;
+    margin: 0;
 }
