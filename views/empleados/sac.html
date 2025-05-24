@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiteTronic | SAC</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 <body>
     <!-- Barra lateral -->
@@ -65,5 +66,62 @@
             </div>
         </a>
     </aside>
+
+    <main>
+        <!-- Contenedor de los tickets -->
+        <div class="targeta" id="targeta-tickets">
+            <!-- Cabecera de tickets -->
+            <div class="header-targeta">
+                <h2>Tickets</h2>
+                <!-- Contenedor de la barra de búsqueda -->
+                <div class="barra-busqueda">
+                    <input type="text" placeholder="Buscar Ticket...">
+                    <img src="../../public/icons/lupa.svg" alt="">
+                </div>
+                <!-- formulario de filtrar fecha -->
+                <form action="" id="filtrar-fecha">
+                    <label for="input-fecha">Filtrar por fecha</label>
+                    <input type="date" id="input-fecha">
+                </form>
+                <button id="boton-crear-ticket">
+                    <p>Crear</p>
+                    <img src="../../public/icons/crear-blanco.svg" alt="">
+                </button>
+            </div>
+            <div class="contenido-ticket"></div>
+            <div class="pie-targeta">
+                <p>Ordenar por: Más reciente</p>
+                <img src="../../public/icons/triangulo-blanco.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Contenedor de las reparaciones -->
+        <div class="targeta" id="targeta-reparaciones">
+            <!-- Cabecera de tickets -->
+            <div class="header-targeta">
+                <h2>Reparaciones</h2>
+                <!-- Contenedor de la barra de búsqueda -->
+                <div class="barra-busqueda">
+                    <input type="text" placeholder="Buscar Reparación...">
+                    <img src="../../public/icons/lupa.svg" alt="">
+                </div>
+                <!-- formulario de filtrar fecha -->
+                <form action="" id="filtrar-fecha">
+                    <label for="input-fecha">Filtrar por fecha</label>
+                    <input type="date" id="input-fecha">
+                </form>
+                <button id="boton-crear-ticket">
+                    <p>Crear</p>
+                    <img src="../../public/icons/crear-blanco.svg" alt="">
+                </button>
+            </div>
+            <div class="contenido-ticket"></div>
+            <div class="pie-targeta">
+                <p>Ordenar por: Más reciente</p>
+                <img src="../../public/icons/triangulo-blanco.svg" alt="">
+            </div>
+        </div>
+        
+    </main>
 </body>
 </html>
