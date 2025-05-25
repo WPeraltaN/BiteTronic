@@ -57,7 +57,7 @@ table {
 }
 
 /* MENÚ LATERAL */
-/* contenedor del menú */
+/* Contenedor del menú lateral */
 .menu-lateral{
     align-items: center;
     display: flex;
@@ -65,9 +65,10 @@ table {
     flex-direction: column;
     float: left;
     height: 100vh;
-    width: 20vw;
+    width: 20%;
 }
 
+/* Logo */
 .menu-lateral h2{
     font-family: black_hans_sans;
     font-size: 20pt;
@@ -75,35 +76,38 @@ table {
     margin-bottom: 20px;
 }
 
+/* Contenedor de elementos de navegación */
 .menu-lateral a div{
     align-items: center;
+    border-radius: 10px;
     display: flex;
     font-family: rubik;
     font-size: 12pt;
     font-weight: bold;
     margin-bottom: 5px;
-    padding: 10px 0 10px 5vw;
+    padding: 10px 0 10px 18%;
+    transition: .6s;
 }
-
+/* textos de los elementos de navegación */
 .menu-lateral a div p{
     margin-left: 8px;
 }
-
 .menu-lateral a,
 .menu-lateral .navegacion{
-    text-decoration: none;
     color: black;
-    width: 100%;
+    text-decoration: none;
+    width: 95%;
+}
+.menu-lateral .navegacion{
+    flex-grow: 1;
 }
 
+/* Ocultar las imágenes innecesarias */
 .menu-lateral a div img:nth-child(2){
     display: none;
 }
 
-.menu-lateral a div{
-    transition: .6s;
-}
-
+/* Hover al contenedor de los elementos de navegación */
 .menu-lateral a:hover div{
     background-color: black;
     color: white;
@@ -111,12 +115,55 @@ table {
 .menu-lateral a:hover div img:nth-child(1){display: none;}
 .menu-lateral a:hover div img:nth-child(2){display: block;}
 
-.menu-lateral .navegacion{
-    flex-grow: 1;
+/* Usuario */
+.menu-lateral .enlace-usuario{
+    margin-bottom: 10px;
+    overflow: auto;
 }
+.menu-lateral .enlace-usuario #usuario{
+    padding: 0;
+    margin: auto;
+    width: fit-content;
+    max-width: 220px;
+}
+/* icono del usuario */
+.menu-lateral .enlace-usuario #icono-usuario{
+    background-color: #C1D5FB;
+    border-radius: 100%;
+    font-size: 15pt;
+    height: 35px;
+    justify-content: center;
+    padding: 0 10px;
+    width: fit-content;
+}
+/* Nombre del usuario */
+.menu-lateral .enlace-usuario p{
+    position: relative;
+}
+/* Nombre del usuario */
+.menu-lateral .enlace-usuario #nombre-usuario{
+    top: -8px;
+}
+/* Rol del usuario */
+.menu-lateral .enlace-usuario #rol-usuario{
+    font-size: 11pt;
+    font-weight: lighter;
+    top: 7px;
+    left: -59px;
+}
+/* Hover al usuario */
+.menu-lateral .enlace-usuario:hover #usuario{background-color: white; color: black;}
+.menu-lateral .enlace-usuario:hover #icono-usuario{background-color: #C1D5FB; color: black;}
 
+/* Log out */
 .menu-lateral #log-out{
     background-color: black;
+    border-radius: 0;
     color: white;
     margin: 0;
 }
+.menu-lateral .enlace-logout{
+    width: 100%;
+}
+/* Hover al log out */
+.menu-lateral #log-out:hover img{display: block;}
