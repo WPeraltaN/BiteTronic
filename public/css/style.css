@@ -63,7 +63,6 @@ table {
     display: flex;
     box-shadow: 3px 0 5px rgba(0, 0, 0, .3);
     flex-direction: column;
-    position: fixed;
     height: 100vh;
     width: 20%;
     background-color: white;
@@ -103,6 +102,10 @@ table {
     flex-grow: 1;
 }
 
+/* Imágenes */
+.menu-lateral a div img{
+    transition: 3s;
+}
 /* Ocultar las imágenes innecesarias */
 .menu-lateral a div img:nth-child(2){
     display: none;

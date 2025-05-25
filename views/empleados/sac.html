@@ -16,131 +16,150 @@
     </style>
 </head>
 <body>
-    <!-- Barra lateral -->
-    <aside class="menu-lateral">
-        <!-- Logo -->
-        <h2>BiteTronic</h2>
-        <!-- Menu de navegación -->
-        <nav class="navegacion">
-            <a href="#">
-                <div id="nav-dashboard">
-                    <img src="../../public/icons/dashboard-negro.svg">
-                    <img src="../../public/icons/dashboard-blanco.svg">
-                    <p>Dashboard</p>
+    <div class="contenedor">
+        <!-- Barra lateral -->
+        <aside class="menu-lateral">
+            <!-- Logo -->
+            <h2>BiteTronic</h2>
+            <!-- Menu de navegación -->
+            <nav class="navegacion">
+                <a href="#">
+                    <div id="nav-dashboard">
+                        <img src="../../public/icons/dashboard-negro.svg">
+                        <img src="../../public/icons/dashboard-blanco.svg">
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div id="nav-inventario">
+                        <img src="../../public/icons/inventario-negro.svg">
+                        <img src="../../public/icons/inventario-blanco.svg">
+                        <p>Inventario</p>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div id="nav-ventas">
+                        <img src="../../public/icons/ventas-negro.svg">
+                        <img src="../../public/icons/ventas-blanco.svg">
+                        <p>Ventas</p>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div id="nav-sac">
+                        <img src="../../public/icons/sac-negro.svg">
+                        <img src="../../public/icons/sac-blanco.svg">
+                        <p>SAC</p>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div id="nav-reportes">
+                        <img src="../../public/icons/reportes-negro.svg">
+                        <img src="../../public/icons/reportes-blanco.svg">
+                        <p>Reportes</p>
+                    </div>
+                </a>
+            </nav>
+    
+            <!-- Usuario -->
+            <a href="#" class="enlace-usuario">
+                <div id="usuario">
+                    <!-- Icono del usuario -->
+                    <div id="icono-usuario">A</div>
+                    <div class="nombre-rol">
+                        <!-- nombre del usuario -->
+                        <p id="nombre-usuario">Admin</p>
+                        <!-- Rol del usuario -->
+                        <p id="rol-usuario">Administrador</p>
+                    </div>
                 </div>
             </a>
-
-            <a href="#">
-                <div id="nav-inventario">
-                    <img src="../../public/icons/inventario-negro.svg">
-                    <img src="../../public/icons/inventario-blanco.svg">
-                    <p>Inventario</p>
+    
+            <!-- Cerrar sesión -->
+            <a href="#" class="enlace-logout">
+                <div id="log-out">
+                    <img src="../../public/icons/logOut.svg">
+                    <p>Log out</p>
                 </div>
             </a>
-
-            <a href="#">
-                <div id="nav-ventas">
-                    <img src="../../public/icons/ventas-negro.svg">
-                    <img src="../../public/icons/ventas-blanco.svg">
-                    <p>Ventas</p>
+        </aside>
+    
+        <main>
+            <!-- Contenedor de los tickets -->
+            <div class="targeta" id="targeta-tickets">
+                <!-- Cabecera de tickets -->
+                <div class="header-targeta">
+                    <h2>Tickets</h2>
+                    <!-- Contenedor de la barra de búsqueda -->
+                    <div class="barra-busqueda">
+                        <input type="text" placeholder="Buscar Ticket...">
+                        <img src="../../public/icons/lupa.svg" alt="">
+                    </div>
+                    <!-- formulario de filtrar fecha -->
+                    <form action="" id="filtrar-fecha">
+                        <label for="input-fecha">Filtrar por fecha:</label>
+                        <input type="date" id="input-fecha">
+                    </form>
+                    <!-- Botón de crear -->
+                    <button id="crear-ticket" class="boton-crear">
+                        <p>Crear</p>
+                        <img src="../../public/icons/crear-blanco.svg" alt="">
+                    </button>
                 </div>
-            </a>
-
-            <a href="#">
-                <div id="nav-sac">
-                    <img src="../../public/icons/sac-negro.svg">
-                    <img src="../../public/icons/sac-blanco.svg">
-                    <p>SAC</p>
+                <div class="contenido-ticket">
+                    <p class="titulo-contenido">ID_Ticket</p>
+                    <p class="titulo-contenido">Producto</p>
+                    <p class="titulo-contenido">Descripción</p>
+                    <p class="titulo-contenido">Fecha</p>
                 </div>
-            </a>
-
-            <a href="#">
-                <div id="nav-reportes">
-                    <img src="../../public/icons/reportes-negro.svg">
-                    <img src="../../public/icons/reportes-blanco.svg">
-                    <p>Reportes</p>
-                </div>
-            </a>
-        </nav>
-
-        <!-- Usuario -->
-        <a href="#" class="enlace-usuario">
-            <div id="usuario">
-                <!-- Icono del usuario -->
-                <div id="icono-usuario">A</div>
-                <div class="nombre-rol">
-                    <!-- nombre del usuario -->
-                    <p id="nombre-usuario">Admin</p>
-                    <!-- Rol del usuario -->
-                    <p id="rol-usuario">Administrador</p>
+                <div class="footer-targeta">
+                    <p>Ordenar por: Más reciente</p>
+                    <img src="../../public/icons/triangulo-blanco.svg" alt="">
                 </div>
             </div>
-        </a>
-
-        <!-- Cerrar sesión -->
-        <a href="#" class="enlace-logout">
-            <div id="log-out">
-                <img src="../../public/icons/logOut.svg">
-                <p>Log out</p>
-            </div>
-        </a>
-    </aside>
-
-    <main>
-        <!-- Contenedor de los tickets -->
-        <div class="targeta" id="targeta-tickets">
-            <!-- Cabecera de tickets -->
-            <div class="header-targeta">
-                <h2>Tickets</h2>
-                <!-- Contenedor de la barra de búsqueda -->
-                <div class="barra-busqueda">
-                    <input type="text" placeholder="Buscar Ticket...">
-                    <img src="../../public/icons/lupa.svg" alt="">
+    
+            <!-- Contenedor de las reparaciones -->
+            <div class="targeta" id="targeta-reparaciones">
+                <!-- Cabecera de tickets -->
+                <div class="header-targeta">
+                    <h2>Reparaciones</h2>
+                    <!-- Contenedor de la barra de búsqueda -->
+                    <div class="barra-busqueda">
+                        <input type="text" placeholder="Buscar Reparación...">
+                        <img src="../../public/icons/lupa.svg" alt="">
+                    </div>
+                    <!-- formulario de filtrar fecha -->
+                    <form action="" id="filtrar-fecha">
+                        <label for="filtrar">Filtrar por:</label>
+                        <select name="" id="filtrar">
+                            <option selected disabled>Estado</option>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="en proceso">En proceso</option>
+                            <option value="finalizado">Finalizado</option>
+                        </select>
+                    </form>
+                    <button id="crear-reparacion" class="boton-crear">
+                        <p>Crear</p>
+                        <img src="../../public/icons/crear-blanco.svg" alt="">
+                    </button>
                 </div>
-                <!-- formulario de filtrar fecha -->
-                <form action="" id="filtrar-fecha">
-                    <label for="input-fecha">Filtrar por fecha</label>
-                    <input type="date" id="input-fecha">
-                </form>
-                <!-- Botón de crear -->
-                <button id="crear-ticket" class="boton-crear">
-                    <p>Crear</p>
-                    <img src="../../public/icons/crear-blanco.svg" alt="">
-                </button>
-            </div>
-            <div class="contenido-ticket"></div>
-            <div class="pie-targeta">
-                <p>Ordenar por: Más reciente</p>
-                <img src="../../public/icons/triangulo-blanco.svg" alt="">
-            </div>
-        </div>
-
-        <!-- Contenedor de las reparaciones -->
-        <div class="targeta" id="targeta-reparaciones">
-            <!-- Cabecera de tickets -->
-            <div class="header-targeta">
-                <h2>Reparaciones</h2>
-                <!-- Contenedor de la barra de búsqueda -->
-                <div class="barra-busqueda">
-                    <input type="text" placeholder="Buscar Reparación...">
-                    <img src="../../public/icons/lupa.svg" alt="">
+                <div class="contenido-reparacion">
+                    <p class="titulo-contenido">ID_Rep</p>
+                    <p class="titulo-contenido">ID_Ticket</p>
+                    <p class="titulo-contenido">Estado</p>
+                    <p class="titulo-contenido">Prioridad</p>
+                    <p class="titulo-contenido">Fecha-inicio</p>
+                    <p class="titulo-contenido">Fecha-final</p>
                 </div>
-                <!-- formulario de filtrar fecha -->
-                <form action="" id="filtrar-fecha">
-                    <label for="input-fecha">Filtrar por fecha</label>
-                    <input type="date" id="input-fecha">
-                </form>
-                <button id="crear-reparacion" class="boton-crear">
-                    <p>Crear</p>
-                    <img src="../../public/icons/crear-blanco.svg" alt="">
-                </button>
+                <div class="footer-targeta">
+                    <p>Ordenar por: Más reciente</p>
+                    <img src="../../public/icons/triangulo-blanco.svg" alt="">
+                </div>
             </div>
-            <div class="contenido-ticket"></div>
-            <div class="pie-targeta">
-                <p>Ordenar por: Más reciente</p>
-                <img src="../../public/icons/triangulo-blanco.svg" alt="">
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>
