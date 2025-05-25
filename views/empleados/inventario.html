@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/inventario.css">
     <title>Inventario</title>
+
+    <style>
+        .menu-lateral #nav-inventario{
+            background-color: black;
+            color: white;
+        }
+        .menu-lateral #nav-inventario img:nth-child(2){display: block;}
+        .menu-lateral #nav-inventario img:nth-child(1){display: none;}
+    </style>
 </head>
 <body>
     <!-- Barra lateral -->
-    <aside>
+    <aside class="menu-lateral">
         <!-- Logo -->
         <h2>BiteTronic</h2>
         <!-- Menu de navegación -->
@@ -15,6 +25,7 @@
             <a href="#">
                 <div id="nav-dashboard">
                     <img src="../../public/icons/dashboard-negro.svg">
+                    <img src="../../public/icons/dashboard-blanco.svg">
                     <p>Dashboard</p>
                 </div>
             </a>
@@ -22,6 +33,7 @@
             <a href="#">
                 <div id="nav-inventario">
                     <img src="../../public/icons/inventario-negro.svg">
+                    <img src="../../public/icons/inventario-blanco.svg">
                     <p>Inventario</p>
                 </div>
             </a>
@@ -29,12 +41,14 @@
             <a href="#">
                 <div id="nav-ventas">
                     <img src="../../public/icons/ventas-negro.svg">
+                    <img src="../../public/icons/ventas-blanco.svg">
                     <p>Ventas</p>
                 </div>
             </a>
 
             <a href="#">
                 <div id="nav-sac">
+                    <img src="../../public/icons/sac-negro.svg">
                     <img src="../../public/icons/sac-blanco.svg">
                     <p>SAC</p>
                 </div>
@@ -43,22 +57,26 @@
             <a href="#">
                 <div id="nav-reportes">
                     <img src="../../public/icons/reportes-negro.svg">
+                    <img src="../../public/icons/reportes-blanco.svg">
                     <p>Reportes</p>
                 </div>
             </a>
         </nav>
 
         <!-- Usuario -->
-        <a href="#">
-            <div id="perfil">
-                <div id="icono-usuario"></div>
-                <p id="nombre-usuario"></p>
-                <p id="rol-usuario"></p>
+        <a href="#" class="enlace-usuario">
+            <div id="usuario">
+                <!-- Icono del usuario -->
+                <div id="icono-usuario">A</div>
+                <!-- nombre del usuario -->
+                <p id="nombre-usuario">Admin</p>
+                <!-- Rol del usuario -->
+                <p id="rol-usuario">Administrador</p>
             </div>
         </a>
 
         <!-- Cerrar sesión -->
-        <a href="#">
+        <a href="#" class="enlace-logout">
             <div id="log-out">
                 <img src="../../public/icons/logOut.svg">
                 <p>Log out</p>
@@ -66,6 +84,45 @@
         </a>
     </aside>
 
-    
+    <div class="contenedor">
+        <header>
+            <form id="opciones-productos"></form>
+                <button id="opciones-filtro">Filtro</button>
+
+                <input type="buscar-producto" placeholder="Busca los productos...">
+
+                <button id="agregar-producto">Agregar producto</button>
+            </form>
+        </header>
+
+        <main>
+            <table>
+                <div class="borde">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Nombre</th>
+                            <th>Proveedor</th>
+                            <th>Stock</th>
+                            <th>Mínimo</th>
+                            <th><img src="/public/img/inventario/Gear.png" alt=""></th>
+                        </tr>
+                    </thead>
+                </div>
+                <tbody>
+                    <tr>
+                        <td><p>1</p></td>
+                        <td><p>2</p></td>
+                        <td><p>3</p></td>
+                        <td><p>4</p></td>
+                        <td><p>5</p></td>
+                        <td><p>6</p></td>
+                        <td><p>7</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
 </body>
 </html>
