@@ -71,7 +71,7 @@ table {
 /* Logo */
 .menu-lateral h2{
     font-family: black_hans_sans;
-    font-size: 20pt;
+    font-size: 22pt;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -85,7 +85,7 @@ table {
     font-size: 12pt;
     font-weight: bold;
     margin-bottom: 5px;
-    padding: 10px 0 10px 18%;
+    padding: 10px 0 10px 20%;
     transition: .6s;
 }
 /* textos de los elementos de navegación */
@@ -137,21 +137,19 @@ table {
     width: fit-content;
 }
 /* Nombre del usuario */
-.menu-lateral .enlace-usuario p{
-    position: relative;
-}
-/* Nombre del usuario */
-.menu-lateral .enlace-usuario #nombre-usuario{
-    top: -8px;
+.menu-lateral .enlace-usuario .nombre-rol{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0;
 }
 /* Rol del usuario */
 .menu-lateral .enlace-usuario #rol-usuario{
     font-size: 11pt;
     font-weight: lighter;
-    top: 7px;
-    left: -59px;
 }
 /* Hover al usuario */
+.menu-lateral .enlace-usuario:hover .nombre-rol,
 .menu-lateral .enlace-usuario:hover #usuario{background-color: white; color: black;}
 .menu-lateral .enlace-usuario:hover #icono-usuario{background-color: #C1D5FB; color: black;}
 
