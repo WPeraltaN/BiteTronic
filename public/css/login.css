@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+/* Contenedor main con imagen de fondo */
 main{
     align-items: center;
     background-image: url(../../public/img/background-login.png);
@@ -17,6 +18,7 @@ main{
     width: 100%;
 }
 
+/* Contenedor del inicio de sesión */
 .container-login{
     align-items: center;
     background-color: #2F2F2F;
@@ -30,12 +32,14 @@ main{
     width: 500px;
 }
 
+/* Título */
 .container-login h1{
     color: white;
     font-family: black_hans_sans;
     font-size: 45px;
 }
 
+/* Formulario de inicio de sesión */
 .container-login form{
     align-items: center;
     display: flex;
@@ -45,6 +49,7 @@ main{
     width: 80%;
 }
 
+/* Diseño aplicado a todos los input */
 .container-login form input{
     background-color: #2F2F2F;
     border: none;
@@ -56,15 +61,18 @@ main{
     width: 100%;
 }
 
+/* Se elimina los bordes del focus al input y se agrega un borde inferior más ancho */
 .container-login form input:focus{
     outline: none;
     border-bottom: 2px solid white;
 }
 
+/* Placeholder con un color blanco */
 .container-login form input::placeholder{
     color: white;
 }
 
+/* Contenedor password*/
 .container-login form .password-login{
     align-items: center;
     display: flex;
@@ -74,6 +82,7 @@ main{
     width: 100%;
 }
 
+/* Icono del contenedor password*/
 .container-login form .password-login img{
     cursor: pointer;
     position: absolute;
@@ -82,6 +91,7 @@ main{
     width: 30px;
 }
 
+/* Enlace del contenedor password */
 .container-login form .password-login a{
     color: white;
     font-family: rubik;
@@ -90,10 +100,12 @@ main{
     margin-top: 15px;
 }
 
+/* Hover al enlace del contenedor password */
 .container-login form .password-login a:hover{
     text-decoration: underline;
 }
 
+/* Contenedor del botón del formulario */
 .container-login form .btn-login{
     align-items: center;
     display: flex;
@@ -101,6 +113,7 @@ main{
     margin-top: 20px;
 }
 
+/* Botón del formulario */
 .container-login form .btn-login button{
     background-color: #38548C;
     border-radius: 10px;
@@ -112,6 +125,7 @@ main{
     width: 300px;
 }
 
+/* Span y enlace del contedor del botón del formulario */
 .container-login form .btn-login span{
     color: white;
     font-family: rubik;
