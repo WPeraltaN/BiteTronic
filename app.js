@@ -24,6 +24,11 @@ app.get('/sistema/inventario',(req,res)=>{
     res.sendFile(path.join(__dirname, 'views', 'empleados', 'inventario.html'));
 });
 
+app.get('/sistema/inventario',(req,res)=>{
+    // Enviar el archivo html a la ruta
+    res.sendFile(path.join(__dirname, 'views', 'empleados', 'inventario.html'));
+});
+
 // Lanzar el servidor
 app.listen(PORT,()=>{
     console.log(`Servidor Escuchando en http://localhost:${PORT}/sistema/sac`);
