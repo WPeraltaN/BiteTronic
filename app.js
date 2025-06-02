@@ -19,6 +19,10 @@ app.get('/sistema/sac',(req,res)=>{
     // Enviar el archivo html a la ruta
     res.sendFile(path.join(__dirname, 'views', 'empleados', 'sac.html'));
 });
+app.get('/sistema/inventario',(req,res)=>{
+    // Enviar el archivo html a la ruta
+    res.sendFile(path.join(__dirname, 'views', 'empleados', 'inventario.html'));
+});
 
 // Lanzar el servidor
 app.listen(PORT,()=>{
